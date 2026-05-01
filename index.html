@@ -27,6 +27,11 @@
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://nishigamimaho.github.io/">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+  <meta name="theme-color" content="#c8a97e">
+
   <!-- 構造化データ (JSON-LD / Person) -->
   <script type="application/ld+json">
   {
@@ -67,8 +72,10 @@
       <nav class="header-nav">
         <ul>
           <li><a href="#profile">PROFILE</a></li>
+          <li><a href="#movie">MOVIE</a></li>
           <li><a href="#works">WORKS</a></li>
           <li><a href="#news">NEWS</a></li>
+          <li><a href="#press">PRESS</a></li>
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
@@ -94,8 +101,10 @@
     <nav>
       <ul>
         <li><a href="#profile">PROFILE</a></li>
+        <li><a href="#movie">MOVIE</a></li>
         <li><a href="#works">WORKS</a></li>
         <li><a href="#news">NEWS</a></li>
+        <li><a href="#press">PRESS</a></li>
         <li><a href="#contact">CONTACT</a></li>
       </ul>
     </nav>
@@ -108,7 +117,7 @@
       <div class="hero-image">
         <div class="hero-image-placeholder">
           <!-- ここにプロフィール写真を配置 -->
-          <img src="images/hero.jpg" alt="西上真帆" onerror="this.style.display='none'">
+          <img src="images/hero.jpg" alt="西上真帆" fetchpriority="high" onerror="this.style.display='none'">
           <div class="hero-image-bg"></div>
         </div>
       </div>
@@ -131,7 +140,7 @@
         </div>
         <div class="profile-layout">
           <div class="profile-photo">
-            <img src="images/profile.jpg" alt="プロフィール写真" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/profile.jpg" alt="プロフィール写真" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
           </div>
           <div class="profile-info">
             <h2 class="profile-name-ja">西上真帆</h2>
@@ -157,9 +166,45 @@
                 <dt>資格</dt>
                 <dd>●●検定　●級</dd>
               </div>
+              <div class="profile-item">
+                <dt>身長</dt>
+                <dd>●●● cm</dd>
+              </div>
+              <div class="profile-item">
+                <dt>体重</dt>
+                <dd>●● kg</dd>
+              </div>
+              <div class="profile-item">
+                <dt>スリーサイズ</dt>
+                <dd>B●● / W●● / H●●</dd>
+              </div>
+              <div class="profile-item">
+                <dt>靴のサイズ</dt>
+                <dd>●● cm</dd>
+              </div>
+              <div class="profile-item">
+                <dt>髪色</dt>
+                <dd>●●</dd>
+              </div>
             </dl>
             <div class="profile-bio">
               <p>プロフィール文章をここに記載します。タレントの経歴や個性、活動内容について自由に記述してください。</p>
+            </div>
+            <div class="work-types">
+              <p class="work-types-label">対応可能なお仕事</p>
+              <ul class="work-type-list">
+                <li>MC・司会</li>
+                <li>テレビ出演</li>
+                <li>ドラマ・映画</li>
+                <li>ラジオ</li>
+                <li>舞台・朗読劇</li>
+                <li>イベント</li>
+                <li>CM・広告</li>
+                <li>モデル</li>
+                <li>ナレーション</li>
+                <li>WEB・SNS</li>
+                <li>講演・トーク</li>
+              </ul>
             </div>
             <div class="profile-sns">
               <a href="#" class="sns-link">
@@ -176,6 +221,26 @@
               </a>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 映像リール -->
+    <section class="movie" id="movie">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">MOVIE</span>
+          <h2 class="section-title">映像素材</h2>
+        </div>
+        <div class="movie-embed">
+          <iframe
+            src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+            title="西上真帆 映像リール"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            loading="lazy"
+          ></iframe>
         </div>
       </div>
     </section>
@@ -340,22 +405,67 @@
         </div>
         <div class="gallery-grid">
           <div class="gallery-item">
-            <img src="images/gallery1.jpg" alt="ギャラリー画像1" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/gallery1.jpg" alt="ギャラリー画像1" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
           </div>
           <div class="gallery-item">
-            <img src="images/gallery2.jpg" alt="ギャラリー画像2" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/gallery2.jpg" alt="ギャラリー画像2" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
           </div>
           <div class="gallery-item">
-            <img src="images/gallery3.jpg" alt="ギャラリー画像3" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/gallery3.jpg" alt="ギャラリー画像3" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
           </div>
           <div class="gallery-item">
-            <img src="images/gallery4.jpg" alt="ギャラリー画像4" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/gallery4.jpg" alt="ギャラリー画像4" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
           </div>
           <div class="gallery-item">
-            <img src="images/gallery5.jpg" alt="ギャラリー画像5" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/gallery5.jpg" alt="ギャラリー画像5" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
           </div>
           <div class="gallery-item">
-            <img src="images/gallery6.jpg" alt="ギャラリー画像6" onerror="this.parentElement.classList.add('no-image')">
+            <img src="images/gallery6.jpg" alt="ギャラリー画像6" loading="lazy" onerror="this.parentElement.classList.add('no-image')">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- プレスキット -->
+    <section class="press" id="press">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-label">PRESS</span>
+          <h2 class="section-title">プレスキット</h2>
+        </div>
+        <p class="press-lead">取材・掲載用の素材をダウンロードいただけます。素材の使用はメディア関係者に限ります。</p>
+        <div class="press-grid">
+          <div class="press-card">
+            <div class="press-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <p class="press-card-title">プロフィール写真（縦）</p>
+            <p class="press-card-desc">高解像度・PNG / JPEG</p>
+            <a href="press/photo-portrait.zip" class="press-card-btn" download>ダウンロード</a>
+          </div>
+          <div class="press-card">
+            <div class="press-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <p class="press-card-title">プロフィール写真（横）</p>
+            <p class="press-card-desc">高解像度・PNG / JPEG</p>
+            <a href="press/photo-landscape.zip" class="press-card-btn" download>ダウンロード</a>
+          </div>
+          <div class="press-card">
+            <div class="press-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <p class="press-card-title">プロフィール（文章）</p>
+            <p class="press-card-desc">テキスト / PDF</p>
+            <a href="press/profile.pdf" class="press-card-btn" download>ダウンロード</a>
+          </div>
+          <div class="press-card">
+            <div class="press-card-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </div>
+            <p class="press-card-title">プレスリリース一式</p>
+            <p class="press-card-desc">PDF</p>
+            <a href="press/pressrelease.pdf" class="press-card-btn" download>ダウンロード</a>
           </div>
         </div>
       </div>
@@ -369,10 +479,8 @@
           <h2 class="section-title">お仕事のご依頼</h2>
         </div>
         <div class="contact-content">
-          <p class="contact-lead">出演・取材・講演などのご依頼は、下記よりお問い合わせください。</p>
-          <div class="contact-info">
-            <a href="mailto:info@example.jp" class="btn-primary btn-large">お問い合わせはこちら</a>
-          </div>
+          <p class="contact-lead">出演・取材・講演などのご依頼は、下記フォームよりお問い合わせください。<br>内容を確認の上、順次ご返信いたします。</p>
+          <a href="https://forms.gle/YOUR_GOOGLE_FORM_ID" target="_blank" rel="noopener" class="btn-primary btn-large">お問い合わせフォームへ</a>
         </div>
       </div>
     </section>
